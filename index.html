@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://www.cssscript.com/demo/simple-typewriter-effect-pure-javascript-typewriterjs/typewriter.js"></script>
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+</head>
+
+<body>
+
+    <div class="wrap">
+        <div class="cbg-blue section">
+            <div class="container">
+                <div class="header_inner">
+                    <img src="img/logo_white.svg" class="logo">
+                    <button class="nav_btn">신청하기</button>
+                </div>
+                <div class="container_inner title_1_left">
+                    <div class="title_1">
+                        <div class="title_1_flex" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="0">
+                            <div id="typing"></div>
+                            <h1>홈페이지를 멋지고
+                                <br>간편하게 디자인 해보세요.</h1>
+                            <div class="opc">
+                                <h1>티라노가 도와드립니다.</h1>
+                            </div>
+                            
+                            <button class="title_btn">홈페이지 예시 보기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cbg-white section">
+            <div class="container">
+                <div class="container_inner">
+                    <div class="title_2" id="title_2">
+                        <div class="flex-container">
+                            <h1 data-aos="fade-in" data-aos-duration="2000" data-aos-delay="0">
+                                <font color="#0567fa">원하는 홈페이지</font>를
+                                <br>알려주기만 하세요.
+                            </h1>
+                            <div class="circle-container" data-aos="fade-in" data-aos-duration="2000"
+                                data-aos-delay="1000">
+                                <div class="circle-box">
+                                    <div class="circle">
+                                        <h2>Function</h2>
+                                    </div>
+                                    <h2>꼭 필요한 기능</h2>
+                                    <p>홍보에 필요한 기능을
+                                        <br>최소한의 비용으로 만듭니다.
+                                    </p>
+                                </div>
+                                <div class="circle-box">
+                                    <div class="circle">
+                                        <h2>Design</h2>
+                                    </div>
+                                    <h2>감각적인 디자인</h2>
+                                    <p>원하는 디자인을 알려주시면
+                                        <br>감각적으로 디자인해드립니다.
+                                    </p>
+                                </div>
+                                <div class="circle-box">
+                                    <div class="circle">
+                                        <h2>Template</h2>
+                                    </div>
+                                    <h2>내게 맞는 템플릿</h2>
+                                    <p>템플릿과 디자인만 고르시면
+                                        <br>나머지는 티라노가 만듭니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var typing = document.getElementById('typing');
+        var typewriter = new Typewriter(typing, {
+            loop: true
+        });
+        
+        typewriter
+                .typeString('PT샵')
+            .pauseFor(1500)
+                .deleteAll()
+                //.typeString('<br/>')
+            .typeString('요가 스튜디오')
+            .pauseFor(1500)
+                .deleteAll()                        
+                //.typeString('<br/>')        
+            .typeString('필라테스 스튜디오')
+                .pauseFor(2500)
+            .start();
+        </script>
+
+    <script>
+        window.onload = function () {
+            const elm = document.querySelectorAll('.section');
+            const elmCount = elm.length;
+            elm.forEach(function (item, index) {
+                item.addEventListener('mousewheel', function (event) {
+                    event.preventDefault();
+                    let delta = 0;
+
+                    if (!event) event = window.event;
+                    if (event.wheelDelta) {
+                        delta = event.wheelDelta / 120;
+                        if (window.opera) delta = -delta;
+                    }
+                    else if (event.detail)
+                        delta = -event.detail / 3;
+
+                    let moveTop = window.scrollY;
+                    let elmSelector = elm[index];
+
+                    // wheel down : move to next section
+                    if (delta < 0) {
+                        if (elmSelector !== elmCount - 1) {
+                            try {
+                                moveTop = window.pageYOffset + elmSelector.nextElementSibling.getBoundingClientRect().top;
+                            } catch (e) { }
+                        }
+                    }
+
+                    // wheel up : move to previous section
+                    else {
+                        if (elmSelector !== 0) {
+                            try {
+                                moveTop = window.pageYOffset + elmSelector.previousElementSibling.getBoundingClientRect().top;
+                            } catch (e) { }
+                        }
+                    }
+
+                    const body = document.querySelector('html');
+                    window.scrollTo({ top: moveTop, left: 0, behavior: 'smooth' });
+                });
+            });
+        }
+    </script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
