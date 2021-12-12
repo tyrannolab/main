@@ -78,11 +78,24 @@ h1 {
 .cbg-blue {
     background-image: linear-gradient(140deg, rgb(5, 103, 250), rgb(197, 97, 255));
     width: 100%;
+    height: auto;
 
 }
 
 .cbg-white {
-    background: #fff;
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+}
+
+.cbg-softblue {
+    background-color: rgba(5, 103, 250, 0.1);
+    width: 100%;
+    height: auto;
+}
+
+.cbg-oblue {
+    background-color: #0567fa;
     width: 100%;
     height: auto;
 }
@@ -192,7 +205,15 @@ h1 {
     width: 36px;
 }
 
-.title_2 {
+.title_2,
+.title_3,
+.title_4,
+.title_5,
+.title_6,
+.title_7,
+.title_8,
+.title_9,
+.titlte_10 {
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -218,6 +239,14 @@ h1 {
 
 .circle-box {
     width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.function-box {
+    width: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -253,4 +282,79 @@ h1 {
 
 .circle-box p {
     color: #7a7a7a;
+}
+
+.title_3 h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.title_3 p {
+    font-size: 20px;
+    color: #7a7a7a;
+}
+
+.img-tt3-1 {
+    width: 60%;
+    margin: 30px 0 0 20px;
+}
+
+.title_4 h1 {
+    color: #0567fa;
+    font-size: 70px;
+}
+
+.function-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-tt4-1,
+.img-tt4-3 {
+    padding-left: 100px;
+}
+
+.img-tt4-2,
+.img-tt4-4 {
+    padding-right: 100px;
+}
+
+.function-disc-1,
+.function-disc-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding-right: 200px;
+}
+
+.function-disc-2,
+.function-disc-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding-left: 200px;
+}
+
+.function-disc-left {
+    text-align: left;
+}
+
+.function-disc h3 {
+    color: #4a4a4a;
+    text-align: left;
+}
+
+.function-disc h1 {
+    color: #0567fa;
+    font-size: 48px;
+}
+
+.function-disc p {
+    margin-top: 10px;
+    color: #7a7a7a;
+    font-size: 20px;
 }
