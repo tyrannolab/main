@@ -58,6 +58,8 @@ table {
     line-height: 1.5;
 }
 
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
 /* 제목 스타일 초기화 */
 h2,
 h3,
@@ -89,7 +91,7 @@ h1 {
 }
 
 .cbg-softblue {
-    background-color: rgba(5, 103, 250, 0.1);
+    background-color: rgba(5, 103, 250, 0.05);
     width: 100%;
     height: auto;
 }
@@ -140,7 +142,6 @@ h1 {
 }
 
 .title_1_left {
-    display: flex;
     justify-content: left;
 }
 
@@ -149,11 +150,33 @@ h1 {
     height: 100vh;
     min-height: 640px;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    margin-top: -60px;
+}
+
+.title_1_flex {
+    display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     text-align: left;
-    margin-top: -60px;
+}
+
+.img_main_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.img_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    height: 562px;
 }
 
 #typing {
@@ -206,7 +229,6 @@ h1 {
 }
 
 .title_2,
-.title_3,
 .title_4,
 .title_5,
 .title_6,
@@ -224,8 +246,23 @@ h1 {
     min-height: 640px;
 }
 
+.title_3 {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    min-height: 640px;
+}
+
 .flex-container {
     width: 100%;
+}
+
+.flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .title_2 h1 {
@@ -273,7 +310,12 @@ h1 {
 
 .circle h2 {
     color: #fff;
-    font-size: 24px;
+    font-size: 64px;
+}
+
+i {
+    color: #fff;
+    font-size: 64px;
 }
 
 .circle-box h2 {
@@ -294,9 +336,15 @@ h1 {
     color: #7a7a7a;
 }
 
-.img-tt3-1 {
+.img-tt3-1-box {
+    background-color: #0567fa;
+    border-radius: 30px;
     width: 60%;
-    margin: 30px 0 0 20px;
+}
+
+.img-tt3-1 {
+    width: 90%;
+    margin: 30px 0 0 38px;
 }
 
 .title_4 h1 {
@@ -321,6 +369,7 @@ h1 {
 
 .function-disc-1,
 .function-disc-3 {
+    width: 330px;
     display: flex;
     flex-direction: column;
     align-items: center;
