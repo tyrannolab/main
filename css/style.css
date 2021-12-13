@@ -81,9 +81,9 @@ h1 {
     position: fixed;
     bottom: 60px;
     right: 20px;
-    padding: 14px 30px;
-    background-color: #fff;
-    color: #4a4a4a;
+    padding: 18px 30px;
+    background-color: #0567fa;
+    color: #fff;
     font-weight: 700;
     border-radius: 14px;
     cursor: pointer;
@@ -113,7 +113,7 @@ h1 {
 .modal_box {
   width: 400px;
   height: auto;
-  padding: 30px;
+  padding: 20px;
   background-color: #fff;
   border-radius: 24px;
 }
@@ -228,7 +228,6 @@ h1 {
 
 .header_inner {
     width: 100%;
-    margin: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -242,6 +241,7 @@ h1 {
 
 .logo {
     height: 14px;
+    padding-left: 20px;
 }
 
 .nav_btn {
@@ -289,7 +289,6 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: left;
 }
 
 .img_main {
@@ -393,6 +392,16 @@ h1 {
     justify-content: space-between;
 }
 
+.flex-box_tt3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-center {
+    text-align: center;
+}
+
 .title_2 h1 {
     font-size: 42px;
     margin-bottom: 60px;
@@ -447,7 +456,7 @@ i {
 }
 
 .title_3 h1 {
-    color: #fff;
+    color: #0567fa;
     font-size: 60px;
     font-weight: 900;
     margin-bottom: 20px;
@@ -532,6 +541,14 @@ i {
     font-size: 20px;
 }
 
+.tt-10-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 122px;
+}
+
 .tt-10-text {
     margin-left: 200px;
     display: flex;
@@ -562,7 +579,7 @@ i {
 .color-change {
     width: 222px;
     height: 446px;
-    margin-right: 200px;
+
     margin-top: 60px;
     border-radius: 30px;
     animation-name: colorchange;
@@ -603,7 +620,7 @@ i {
 
 .img-template {
     margin-top: -503px;
-    margin-left: -202px;
+
     width: 360px;
     height: 562px;
 }
@@ -623,7 +640,7 @@ i {
     width: 222px;
     height: 446px;
     background-color: #1a1a1a;
-    margin-right: 200px;
+
     margin-top: 60px;
     border-radius: 30px;
     text-align: left;
