@@ -77,10 +77,14 @@ h1 {
     width: 100%;
 }
 
-.regist {
+.regist-box {
     position: fixed;
     bottom: 60px;
     right: 20px;
+    z-index: 999;
+}
+
+.regist {
     padding: 18px 30px;
     background-color: #0567fa;
     color: #fff;
