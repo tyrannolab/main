@@ -298,6 +298,9 @@ h1 {
     justify-content: center;
     width: 360px;
     height: 562px;
+    image-rendering: -webkit-optimize-contrast;
+    transform: translateZ(0);
+    backface-visibility: hidden;
 }
 
 #typing {
@@ -493,11 +496,17 @@ i {
 .img-tt4-1,
 .img-tt4-3 {
     padding-left: 100px;
+    image-rendering: -webkit-optimize-contrast;
+    transform: translateZ(0);
+    backface-visibility: hidden;
 }
 
 .img-tt4-2,
 .img-tt4-4 {
     padding-right: 100px;
+    image-rendering: -webkit-optimize-contrast;
+    transform: translateZ(0);
+    backface-visibility: hidden;
 }
 
 .function-disc-1,
