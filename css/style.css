@@ -474,9 +474,14 @@ i {
     margin-bottom: 20px;
 }
 
+.title_3 h2 {
+    color: #4a4a4a;
+}
+
 .title_3 p {
     font-size: 20px;
     color: #7a7a7a;
+    margin-top: 30px;
 }
 
 .img-tt3-1-box {
